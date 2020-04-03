@@ -6,7 +6,7 @@ export class SumIntegers {
   private sum: number;
   private meter: number;
 
-  constructor({ finalInt = 100, sumProgressTracker }) {
+  constructor({ finalInt = 100, sumProgressTracker }: Constructor) {
     this.validateFinalInt(finalInt);
     this.finalInt = finalInt;
     this.sumProgressTracker = sumProgressTracker;

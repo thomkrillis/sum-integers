@@ -5,12 +5,25 @@
     "build": "tsc",
     "go": "npm run-script build && npm run-script run",
     "lint": "eslint --ext ts src/*",
-    "run": "node build/index.js"
+    "run": "node build/index.js",
+    "test": "jest"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.1.5",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
+    "babel-jest": "^25.2.6",
     "eslint": "^6.8.0",
+    "jest": "^25.2.7",
     "typescript": "^3.8.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ]
   }
 }
